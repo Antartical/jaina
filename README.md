@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width="200" height="250" src="https://i.imgur.com/viWm1KT.png">
+  <img width="200" height="250" src="https://i.imgur.com/lbeRTwF.png">
 </p>
 
 ## Jaina in a nutshell
