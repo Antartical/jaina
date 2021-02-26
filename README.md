@@ -20,5 +20,5 @@ cp ./build/env/.env.sample ./build/env/.env
 Moreover you can perform the following operations:
  - **make**: setting up the containers
  - **make sh**: attach a console inside jaina.
- - **make logs**: show gandalf logs
+ - **make logs**: show jaina logs
  - **make local.build**: recompiles jaina image
