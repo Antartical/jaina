@@ -1,15 +1,13 @@
 <template>
-  <Password toggleMask></Password>
+  <div>
+    <h1>Hola</h1>
+  </div>
+  <Password className="password" toggleMask></Password>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import Password from "primevue/password";
 
-@Options({
-  components: {
-    Password
-  }
-})
-export default class Home extends Vue {}
+@Options({})
+export default class Signin extends Vue {}
 </script>
