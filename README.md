@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.com/Antartical/jaina.svg?branch=master)](https://travis-ci.com/Antartical/jaina)
+[![Coverage Status](https://coveralls.io/repos/github/Antartical/jaina/badge.svg)](https://coveralls.io/github/Antartical/jaina)
+
+
 <p align="center">
   <img width="200" height="250" src="https://i.imgur.com/lbeRTwF.png">
 </p>
