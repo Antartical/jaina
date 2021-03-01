@@ -1,5 +1,5 @@
 <template>
-  <Password v-model="value3" toggleMask></Password>
+  <Password toggleMask></Password>
 </template>
 
 <script lang="ts">
@@ -13,4 +13,3 @@ import Password from "primevue/password";
 })
 export default class Home extends Vue {}
 </script>
- 

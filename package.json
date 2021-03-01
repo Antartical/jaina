@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve --port 9110",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
+    "test": "vue-cli-service test:unit 'tests/**/*.test.ts'",
+    "test:watch": "vue-cli-service test:unit --watch 'tests/**/*.test.ts'",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
