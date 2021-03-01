@@ -1,6 +1,6 @@
 import { expect } from "chai";
 import { shallowMount } from "@vue/test-utils";
-import Signin from "@/views/Signin.vue";
+import Signin from "src/views/Signin.vue";
 
 describe("Signin.vue", () => {
   it("success test", () => {

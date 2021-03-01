@@ -5,12 +5,16 @@
   "scripts": {
     "serve": "vue-cli-service serve --port 9110",
     "build": "vue-cli-service build",
-    "test": "vue-cli-service test:unit 'tests/**/*.test.ts'",
+    "test": "nyc vue-cli-service test:unit 'tests/**/*.test.ts'",
     "test:watch": "vue-cli-service test:unit --watch 'tests/**/*.test.ts'",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "report:coverage": "nyc report",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "coveralls": "^3.1.0",
+    "nyc": "^15.1.0",
     "primeicons": "^4.1.0",
     "primevue": "^3.3.2",
     "vue": "^3.0.0",
