@@ -17,7 +17,7 @@ script:
   - npm run build --prod
 
 before_deploy:
-    - zip dist
+    - zip -r dist.zip dist
     - git config --local user.name "YOUR GIT USER NAME"
     - git config --local user.email "YOUR GIT USER EMAIL"
     - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
