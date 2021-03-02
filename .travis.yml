@@ -16,10 +16,17 @@ script:
   - npm run coveralls
   - npm run build --prod
 
+before_deploy:
+    - zip dist
+    - git config --local user.name "YOUR GIT USER NAME"
+    - git config --local user.email "YOUR GIT USER EMAIL"
+    - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+    - git tag $TRAVIS_TAG
+
 deploy:
-  provider: pages
+  provider: releases
+  api_key: "GITHUB OAUTH TOKEN"
+  file: "dist.zip"
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: dist
   on:
     branch: master
