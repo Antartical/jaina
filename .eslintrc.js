@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   env: {
     node: true,
-    mocha: true
+    jest: true
   },
   extends: [
     "plugin:vue/vue3-essential",
@@ -26,7 +26,16 @@ module.exports = {
         "**/tests/*.test.{j,t}s?(x)"
       ],
       env: {
-        mocha: true
+        jest: true
+      }
+    },
+    {
+      files: [
+        "**/__tests__/*.{j,t}s?(x)",
+        "**/tests/unit/**/*.spec.{j,t}s?(x)"
+      ],
+      env: {
+        jest: true
       }
     }
   ]
