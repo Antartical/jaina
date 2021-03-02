@@ -10,6 +10,9 @@ local.start:
 local.down:
 	@docker-compose down
 
+local.test:
+	@docker exec -it jaina npm run test:watch
+
 local.check.credentials:
 	@if ! [ -s ~/.credentials/ghcr.name ]; then \
     	python3 build/scripts/ghcr.py; \
